@@ -30,8 +30,12 @@ class ProductTest {
 		
 		//assertTrue(productList.containsAll(productListTesting));
 		
-		assertEquals(productList, productListTesting);
-
+		assertEquals(productList.get(0).getBarcode(), productListTesting.get(0).getBarcode());
+		assertEquals(productList.get(1).getBarcode(), productListTesting.get(1).getBarcode());
+		assertEquals(productList.get(2).getBarcode(), productListTesting.get(2).getBarcode());
+		assertEquals(productList.get(3).getBarcode(), productListTesting.get(3).getBarcode());
+		assertEquals(productList.get(4).getBarcode(), productListTesting.get(4).getBarcode());
+		
 	}
 
 }

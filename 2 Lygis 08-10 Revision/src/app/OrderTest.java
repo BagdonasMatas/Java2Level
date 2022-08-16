@@ -15,11 +15,12 @@ class OrderTest {
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
 	}
-
+	
 	@Test
 	void makeOrderExceptionTest() {
 		Product product1 = new Product("Varske", 1.49, "07886659844", 6);
-		List<Product> productList = new ArrayList<>(Arrays.asList(product1));
+		Product product2 = new Product("Suris", 6.85, "06669844723", 2);
+		List<Product> productList = new ArrayList<>(Arrays.asList(product1, product2));
 		Shop shopTest = new Shop("Iki", "Petro g. 50", productList);
 
 		Order order = new Order("1-LT", null, null);

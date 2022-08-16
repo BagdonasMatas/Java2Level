@@ -39,10 +39,10 @@ public class Shop {
 		this.products = products;
 	}
 	
-	public double shopBalance(List<Product> products){
+	public double shopBalance(){
 		Double bal = 0.0;
 		
-		for(Product p : products) {
+		for(Product p : this.products) {
 			bal += p.getPrice() * p.getRemainder();
 		}
 		
